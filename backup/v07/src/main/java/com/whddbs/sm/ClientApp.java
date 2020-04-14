@@ -21,12 +21,6 @@ public class ClientApp {
       }
 
       processCommand(command);
-      
-      if (command.endsWith("/server/stop")) {
-        processCommand(command);
-        System.out.println("종료합니다.");
-        break;
-      }
     }
   }
 
@@ -74,7 +68,7 @@ public class ClientApp {
         }
       }
     } catch (Exception e) {
-      System.out.println("processCommand2 오류 : " + e.getMessage());
+      System.out.println(e.getMessage());
     }
   }
 
